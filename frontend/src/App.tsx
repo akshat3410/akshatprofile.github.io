@@ -29,7 +29,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   return (
-    <Router>
+    <Router basename="/akshatprofile.github.io">
       <AnimatePresence mode="wait">
         {loading && <Loader onLoadingComplete={() => setLoading(false)} />}
       </AnimatePresence>
