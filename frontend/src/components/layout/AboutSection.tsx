@@ -53,7 +53,7 @@ export default function AboutSection() {
           <div className="w-full md:w-2/3 relative min-h-[80vh]">
             <ParallaxWrapper offset={100} className="absolute top-0 right-0 w-2/3 aspect-[3/4] z-10">
               <img 
-                src="/hero-image.jpg" 
+                src={`${import.meta.env.BASE_URL}hero-image.jpg`} 
                 alt="Working" 
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500 shadow-xl"
               />
@@ -66,7 +66,7 @@ export default function AboutSection() {
               <div className="w-full h-full bg-gray-100 shadow-inner" /> 
               {/* Placeholder for second image */}
               <img 
-                src="/hero-image.jpg" 
+                src={`${import.meta.env.BASE_URL}hero-image.jpg`} 
                 alt="Detail" 
                 className="w-full h-full object-cover opacity-50 mix-blend-multiply"
               />
