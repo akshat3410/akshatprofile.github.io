@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Oswald:wght@200..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFFADC;
+    color: #111111;
+    font-family: 'Manrope', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+@layer components {
+    .btn-primary {
+        @apply px-6 py-2 bg-[#B6F500] text-black font-bold rounded hover:bg-[#A4DD00] transition-all transform hover:scale-105;
+    }
+}
