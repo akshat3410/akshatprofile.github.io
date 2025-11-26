@@ -12,10 +12,10 @@ interface Project {
 }
 
 const projects: Project[] = [
-  { id: 1, title: "E-Commerce Platform", category: "Full Stack", image: "/hero-image.jpg" },
-  { id: 2, title: "Portfolio 2024", category: "Design & Dev", image: "/hero-image.jpg" },
-  { id: 3, title: "AI Dashboard", category: "React + Python", image: "/hero-image.jpg" },
-  { id: 4, title: "Social App", category: "Mobile", image: "/hero-image.jpg" },
+  { id: 1, title: "E-Commerce Platform", category: "Full Stack", image: `${import.meta.env.BASE_URL}hero-image.jpg` },
+  { id: 2, title: "Portfolio 2024", category: "Design & Dev", image: `${import.meta.env.BASE_URL}hero-image.jpg` },
+  { id: 3, title: "AI Dashboard", category: "React + Python", image: `${import.meta.env.BASE_URL}hero-image.jpg` },
+  { id: 4, title: "Social App", category: "Mobile", image: `${import.meta.env.BASE_URL}hero-image.jpg` },
 ];
 
 export default function ProjectsSection() {

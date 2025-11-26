@@ -58,7 +58,7 @@ export default function HeroSection() {
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 0.5, ease: [0.33, 1, 0.68, 1] }}
-              src="/hero-image.jpg"
+              src={`${import.meta.env.BASE_URL}hero-image.jpg`}
               alt="Akshat Soni"
               className="w-auto h-[85%] object-contain relative z-10 drop-shadow-2xl"
             />
